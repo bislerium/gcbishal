@@ -23,16 +23,20 @@ namespace Human
 {
     internal class Person
     {
-        const String Name = "Bishal GC";
+        const String Name = "Bishal Gharti Chhetri";
         readonly DateTime BirthDate = DateTime.ParseExact("2001/11/08", "yyyy/MM/dd", CultureInfo.InvariantCulture);
         String Passion = "Software Engineer";
         List<String> Interests = new List<string>
         {
             "Internet", "Mobile Application", "DSA", "UI/UX", "Full-stack", "Gaming", "Tech"
         };
-        List<String> Language = new List<String>()
+        List<String> PrimaryLanguage = new List<String>()
         {
-            "C#", "Java", "Python", "Dart",
+            "C#",
+        };
+        List<String> SecondaryLanguage = new List<String>()
+        {
+            "Java", "Python", "Dart", "JavaScript", "TypeScript"
         };
         Dictionary<String, List<String>> Technologies = new Dictionary<String, List<String>>() 
         {
@@ -60,9 +64,8 @@ namespace Human
         {
             "en_UK", "ne_NP", "hi_IN",
         };
-        String AboutMe = @"""
-                The End of Graduation sparkles the start of my passion and Carrier. Learning...
-                Current Focus on: C# and .Net Technologies
+        String AboutMe = @"""                
+                Current Focus on: C# and .Net Technologies + Angular ❤️
         """;
     }
 }
